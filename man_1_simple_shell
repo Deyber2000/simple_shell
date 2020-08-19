@@ -1,0 +1,37 @@
+.TH HSH 1 "10 08 2020" "1" "Simple Shell man page"
+.SH NAME
+.B hsh
+- A simple UNIX command interpreter.
+.SH SYNOPSIS
+.B ./hsh
+.SH DESCRIPTION
+This is a simple shell. That was done with specific parameters.
+.SS Overview
+simple_shell is a program that, through commands entered by keyboard, are read by the standard input and delivered to the Operating System for execution.
+ The standard functions and system calls used in simple_shell are:
+access, execve, exit, fork, free, getline, malloc, perror, signal, stat, wait, write.
+.SS Path Search
+This shell looks for an executable by the name given in the env PATH. Then find the built-in commands with the same name.
+
+.SH MODES
+.B hsh
+Interactive mode
+.SS
+EXAMPLE:
+$ ls -l
+.B ./hsh
+Non-interactive mode
+.SS
+EXAMPLE:
+$ echo "ls -l" | ./hsh
+
+.SH INTEGRATED COMMANDS
+.B env
+- This command prints all the routes in our work environment.
+.B exit
+- The exit command terminates the execution and exits the shell
+
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Deyber Castañeda - Milena Molina Montoya
