@@ -7,30 +7,16 @@ simple_shell is a program that, through commands entered by keyboard, are read b
 The standard functions and system calls used in simple_shell are:
 access, execve, exit, fork, free, getline, malloc, perror, signal, stat, wait, write.
 
-## function prototype
-
-```bash
-int _putchar(char c);
-void _puts(char *str);
-int _strlen(char *s);
-char *_strdup(char *str);
-char *concat_all(char *name, char *sep, char *value);
-
-void sig_handler(int sig_num);
-void _EOF(int len, char *buff);
-void _isatty(void);
-char **splitstring(char *str, const char *delim);
-
-```
-## usage functions
+## FILES 
 
 |function   |  Description |
 | ---    | --- |
-|list_path| this is the linked list|
-| sig_handler|this is the signal for ctrl + c |
-| _isatty|this is print the prompt|
-| _EOF|this function validates len, prints a line break, frees the buffer and closes the program|
-|splitstring| this function divides a string making an array of pointers to each word|
+|atoi.c |       |
+|call_func.c |        |
+|check_path.c |       |
+|comand_prompt.c    |     |
+|exec_args.c   |      |
+|exit.c  |       |
 
 # Compiler
 
