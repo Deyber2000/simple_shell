@@ -13,12 +13,12 @@ void parse_text_path(char *str, char **parsed)
 	char *dest = NULL;
 	int i;
 
-	dest = strtok(str, delimiters);
+	dest = _strtok(str, delimiters);
 	i = 0;
 	while (dest)
 	{
 		parsed[i] = dest;
-		dest = strtok(NULL, delimiters);
+		dest = _strtok(NULL, delimiters);
 		i++;
 	}
 	parsed[i] = NULL;
@@ -60,18 +60,18 @@ return (NULL);
 paths_t *get_path(char **env)
 {
 	int i = 0, j = 0, num, count;
-	char **juanito;
+	char **ramoncito;
 	char *tmp, **tmp2 = NULL;
 	paths_t *head;
 	char *comparation = "PATH";
 /*in this part, iterate inside the environment */
-	juanito = env;
-	while (juanito[i] != NULL)
+	ramoncito = env;
+	while (ramoncito[i] != NULL)
 	{
 		count = 0;
-		for (j = 0; juanito[i][j]; j++)
+		for (j = 0; ramoncito[i][j]; j++)
 		{
-			if (juanito[i][j] == comparation[j] && j < 4)
+			if (ramoncito[i][j] == comparation[j] && j < 4)
 			{
 				count++;
 				/*check for a coincidence whit the path */
@@ -83,7 +83,7 @@ paths_t *get_path(char **env)
 		}
 		i++;
 	}
-	tmp = _strdup(juanito[num]);
+	tmp = _strdup(ramoncito[num]);
 	tmp2 = malloc(sizeof(char *) * 1024);
 	if (!tmp2)
 		return (NULL);
