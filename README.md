@@ -7,16 +7,37 @@ simple_shell is a program that, through commands entered by keyboard, are read b
 The standard functions and system calls used in simple_shell are:
 access, execve, exit, fork, free, getline, malloc, perror, signal, stat, wait, write.
 
-## FILES 
+## FILES
 
 |function   |  Description |
 | ---    | --- |
-|atoi.c |       |
-|call_func.c |        |
-|check_path.c |       |
-|comand_prompt.c    |     |
-|exec_args.c   |      |
-|exit.c  |       |
+|atoi.c |convert a string to number|
+|AUTHORS | contributors to the repository |
+|call_func.c |this function will redirect to the right function|
+|check_path.c | compare two strings|
+|comand_prompt.c |Funtion to change the CTRL+C behavior   |
+|env.c |print the environment variables|
+|exec_args.c   |funtion that executes a command in a child process    |
+|exit.c |Function to exit the program  |
+|free.c|Function that frees lists   |
+|help.c|info of the built in |
+|main.c |main entry of the project  |
+|man_1simple_shell| manual for the project |
+|parse.c| function that parses text of a string into tokens|
+|path.c | parse the input path|
+|print_help.c | contains help functions |
+|print_help2.c |contains help functions |
+| puts.c|  writes the character c to stdout     |
+|README.md| description the project|
+|shell.h | files headers and prototypes      |
+|str_concat.c|copy a string       |
+|strcat.c|show a table whit 9 multiplication  |
+|strcmp.c |       |
+|strcpy.c|       |
+|strdup.c|  copy a string     |
+|strlen.c|show the length of string  |
+|strtok.c|breaks the string    |
+
 
 # Compiler
 
@@ -51,12 +72,12 @@ $
 ```
 ## example output
 ```bash
-vagrant@4.3$ ./hsh
-#cisfun$ /bin/ls
-AUTHORS          hsh              man_1_simple_shell  shell.h            strtok.c
-buildin_exec.c   line_executor.c  README.md           string_handler2.c
-check_buil-in.c  linker_path.c    shell.c             string_handler.c
-#cisfun$ 
+vagrant@4.3$ ./hsh   /*./hsh executable project shell*/
+$ /bin/ls   /*command test*/
+atoi.c  comand_prompt.c  free.c  man_1_simple_shell  print_help.c  strcat.c      strdup.c AUTHORS       env.c      help.c  parse.c     puts.c   strcmp.c      strlen.c   call_func.c   exec_args.c      hsh     path.c      README.md     str_concat.c  strtok.c   check_path.c  exit.c     main.c  print_help2.c       shell.h       strcpy.c
+$  /*name prompt*/
+$ exit  /*commando exit ... project process ends*/
+vagrant@4.3$ 
 ```
 ## Authors
 
