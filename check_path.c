@@ -11,7 +11,7 @@ char *check_path(char **parsed, paths_t *h)
 {
 	char *tmp = NULL;
 	char *tmp2 = NULL;
-	char *juanito = NULL;
+	char *ramoncito = NULL;
 	struct stat buf;
 	char *slash = "/";
 	char *var;
@@ -24,18 +24,18 @@ char *check_path(char **parsed, paths_t *h)
 	{
 		if (h->path)
 		{
-			juanito = _strdup(h->path);
-			tmp2 = (str_concat(juanito, tmp));
+			ramoncito = _strdup(h->path);
+			tmp2 = (str_concat(ramoncito, tmp));
 			if (stat(tmp2, &buf) == 0)
 			{
-				free(juanito);
+				free(ramoncito);
 				free(tmp);
 				return (tmp2);
 			}
 			h = h->next;
 		}
 		free(tmp2);
-		free(juanito);
+		free(ramoncito);
 	}
 	free(tmp);
 	return (parsed[0]);
