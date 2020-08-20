@@ -72,12 +72,12 @@ $
 ```
 ## example output
 ```bash
-vagrant@4.3$ ./hsh
-#cisfun$ /bin/ls
-AUTHORS          hsh              man_1_simple_shell  shell.h            strtok.c
-buildin_exec.c   line_executor.c  README.md           string_handler2.c
-check_buil-in.c  linker_path.c    shell.c             string_handler.c
-#cisfun$ 
+vagrant@4.3$ ./hsh   /*./hsh executable project shell*/
+$ /bin/ls   /*command test*/
+atoi.c  comand_prompt.c  free.c  man_1_simple_shell  print_help.c  strcat.c      strdup.c AUTHORS       env.c      help.c  parse.c     puts.c   strcmp.c      strlen.c   call_func.c   exec_args.c      hsh     path.c      README.md     str_concat.c  strtok.c   check_path.c  exit.c     main.c  print_help2.c       shell.h       strcpy.c
+$  /*name prompt*/
+$ exit  /*commando exit ... project process ends*/
+vagrant@4.3$ 
 ```
 ## Authors
 
