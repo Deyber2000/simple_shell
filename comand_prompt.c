@@ -26,7 +26,7 @@ void shell(char **argv, char *envp[])
 	char *buffer;
 	paths_t *p_path_string;
 
-	p_path_string = get_path(envp);
+	p_path_string = get_path(envp); /* path.c */
 	signal(SIGINT, sighandler);
 	while (1)
 	{
@@ -39,9 +39,10 @@ void shell(char **argv, char *envp[])
 		{
 			if (buffer[0] != '\n' && buffer[0])
 			{
-				parse_text(buffer, parsed_args);
+				parse_text(buffer, parsed_args);/* parse.c */
 				if (parsed_args[0])
 					call_func(buffer, argv, parsed_args, envp, p_path_string);
+				/* call_func.c */
 				else
 					free(buffer);
 			}

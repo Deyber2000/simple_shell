@@ -45,4 +45,6 @@ char *_strchr(const char *s, int c);
 size_t _strspn(const char *s1, const char *s2);
 size_t _strcspn(const char *s1, const char *s2);
 char *_strtok(char *str, const char *delim);
+void func_env(char **env);
+void _puts(char *str);
 #endif
