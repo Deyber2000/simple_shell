@@ -3,7 +3,7 @@
 /**
  * parse_text - A function that parses text of a string into tokens
  * @str: string received to be parsed
- * @parsed: string that  store the tokens
+ * @parsed: string that will store the tokens
  *
  */
 void parse_text(char *str, char **parsed)
