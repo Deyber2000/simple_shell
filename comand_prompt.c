@@ -27,7 +27,7 @@ void shell(char **argv, char *envp[])
 	paths_t *p_path_string;
 
 	p_path_string = get_path(envp); /* path.c */
-	signal(SIGINT, sighandler);
+	signal(SIGINT, sighandler);/* ^C */
 	while (1)
 	{
 		if (isatty(0))

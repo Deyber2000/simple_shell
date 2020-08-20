@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * _strcat - show a table whit 9 multiplication
+ * _strcat - concatenate strings
  * @dest: string to pass
  * @src: string to add
  *

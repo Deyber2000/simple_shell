@@ -25,6 +25,6 @@ void func_exit(char *buffer, char **parsed, paths_t *p_path_string)
 		}
 		free(buffer);
 		free_list(p_path_string);
-		_exit(0);
+		_exit(EXIT_SUCCESS);
 	}
 }

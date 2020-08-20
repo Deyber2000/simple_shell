@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * _strdup - copy a string
+ * _strdup - duplicate  a string
  * @str: string
  *
  * Return: number acci code

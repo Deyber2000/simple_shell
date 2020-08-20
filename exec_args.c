@@ -34,7 +34,7 @@ void exec_args(char *buff, char **argv, char **pars, char **env, paths_t *path)
 			free(buff);
 			free_list(path);
 		}
-		exit(0);
+		exit(EXIT_SUCCESS);
 	}
 	else
 	{

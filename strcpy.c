@@ -1,6 +1,6 @@
 #include "shell.h"
 /**
- * _strcpy - show a table whit 9 multiplication
+ * _strcpy - create a pointer that point to the same place
  *@dest: string dest
  *@src: string source
  *

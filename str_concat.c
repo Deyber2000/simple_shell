@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * str_concat - copy a string
+ * str_concat - concatenate a string
  * @s1: string 1
  * @s2: string 2
  *
