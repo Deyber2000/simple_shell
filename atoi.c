@@ -9,7 +9,7 @@ int _atoi(char *s)
 {
 	unsigned int sum = 0, i = 0, neg = 1;
 
-	if (s[i] = 0)
+	if (s[i] != 0)
 	{
 		for (i = 0; (s[i] < 48 || s[i] > 57); i++)
 		{
