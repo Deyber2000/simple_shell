@@ -19,7 +19,7 @@ void free_list(paths_t *head)
 }
 
 /**
- * free_parsed - A function that frees arguments
+ * free_parsed - A function that frees 
  * @parsed: the arguments to be free
  *
  */
