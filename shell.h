@@ -47,4 +47,12 @@ size_t _strcspn(const char *s1, const char *s2);
 char *_strtok(char *str, const char *delim);
 void func_env(char **env);
 void _puts(char *str);
+ssize_t help_built_in(char **input);
+void help_exit(void);
+void help_env(void);
+void help_help(void);
+void help_setenv(void);
+void help_unsetenv(void);
+void help_cd(void);
+void help(void);
 #endif
