@@ -32,9 +32,9 @@ access, execve, exit, fork, free, getline, malloc, perror, signal, stat, wait, w
 |shell.h | files headers and prototypes      |
 |str_concat.c|copy a string       |
 |strcat.c|show a table whit 9 multiplication  |
-|strcmp.c |       |
-|strcpy.c|       |
-|strdup.c|  copy a string     |
+|strcmp.c | compare strings|
+|strcpy.c| create a pointer that point to the same place|
+|strdup.c|duplicate a string     |
 |strlen.c|show the length of string  |
 |strtok.c|breaks the string    |
 
